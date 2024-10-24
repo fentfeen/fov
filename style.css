@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+input[type="number"],
+input[type="range"] {
+    position: absolute;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkgrey;
+    color: white;
+    font-size: 16px;
+}
+
+input[type="number"] {
+    top: 20px;
+    left: 20px;
+}
+
+input[type="range"] {
+    top: 20px;
+    left: 200px; /* Adjust position for the slider */
+    width: 200px; /* Set width for the slider */
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+}
